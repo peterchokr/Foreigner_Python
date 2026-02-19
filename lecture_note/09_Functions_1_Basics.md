@@ -442,9 +442,9 @@ A function is a reusable block of code that performs a specific task. Define fun
 
 함수는 특정 작업을 수행하는 재사용 가능한 코드 블록입니다. `def`로 함수를 정의하고 이름으로 호출합니다. 함수는 입력값(매개변수)을 받고 출력값(반환값)을 반환할 수 있습니다.
 
-Parameters are variables that receive values when a function is called. Multiple return values can be returned as a tuple. Default parameters allow functions to be called without all arguments.
+Parameters are variables that receive values when a function is called. Multiple return values can be returned. Default parameters allow functions to be called without all arguments.
 
-매개변수는 함수가 호출될 때 값을 받는 변수입니다. 여러 반환값을 튜플로 반환할 수 있습니다. 기본값 설정으로 일부 인자 없이도 함수를 호출할 수 있습니다.
+매개변수는 함수가 호출될 때 값을 받는 변수입니다. 여러 반환값을 반환할 수 있습니다. 기본값 설정으로 일부 인자 없이도 함수를 호출할 수 있습니다.
 
 Well-designed functions make code more organized, readable, and maintainable. Functions also reduce code duplication by reusing code.
 
