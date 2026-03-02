@@ -519,53 +519,6 @@ print("  F Grade (below 60)")
 print("=" * 40)
 ```
 
-### Example 7: Seating Chart (예제 7: 좌석 배치도)
-
-A program that creates a seating chart for a theater or concert venue.
-
-영화관이나 공연장 좌석을 배치하는 프로그램입니다.
-
-```python
-# Seating chart generator (좌석 배치도 생성 프로그램)
-print("🎭" + "=" * 38 + "🎭")
-print("   Seating Chart Generator")
-print("🎭" + "=" * 38 + "🎭")
-
-rows = int(input("\nNumber of rows: "))
-cols = int(input("Number of columns: "))
-
-print("\n" + "=" * 40)
-print("Seating Chart")
-print("=" * 40)
-print("        [ SCREEN ]")
-print("=" * 40)
-
-# Display column numbers (열 번호 표시)
-print("    ", end="")
-for col in range(1, cols + 1):
-    print(f"{col:3}", end="")
-print()
-print("-" * (40))
-
-# Display seats for each row (각 행의 좌석 출력)
-for row in range(rows):
-    # Row letter (A, B, C, ...) (행 알파벳)
-    row_letter = chr(65 + row)  # 65 = 'A'
-    print(f" {row_letter}  ", end="")
-  
-    # Seat numbers (좌석 번호)
-    for col in range(1, cols + 1):
-        print(f"{col:3}", end="")
-    print()
-
-print("=" * 40)
-print(f"Total seats: {rows * cols}")
-
-# Seating class guide (좌석 등급 안내)
-print("\nSeating Classes:")
-print("  Rows A-B: VIP ($20)")
-print("  Rows C-E: Standard ($15)")
-```
 
 ---
 
