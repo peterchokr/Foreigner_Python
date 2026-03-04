@@ -298,32 +298,6 @@ print(type(name))        # <class 'str'>
 print(type(is_student))  # <class 'bool'>
 ```
 
-### Example 1: Member Information Type Checking Program (예제 1: 변수 타입 확인 프로그램)
-
-Let's think about a situation where we register member information on a website. Let's create a program that checks the type of each piece of information.
-
-실생활에서 회원 가입 정보를 입력받는 상황을 생각해봅시다. 각 정보의 타입을 확인하는 프로그램을 만들어봅시다.
-
-```python
-# Member registration program (회원 정보 입력 프로그램)
-print("=== Member Registration ===")
-
-# Store member information (회원 정보 저장)
-member_id = 1001
-member_name = "James Thompson"
-age = 25
-height = 178.5
-weight = 72.3
-is_premium = True
-
-# Display information (정보 출력)
-print(f"Member ID: {member_id} (Type: {type(member_id).__name__})")
-print(f"Name: {member_name} (Type: {type(member_name).__name__})")
-print(f"Age: {age} (Type: {type(age).__name__})")
-print(f"Height: {height}cm (Type: {type(height).__name__})")
-print(f"Weight: {weight}kg (Type: {type(weight).__name__})")
-print(f"Premium Member: {is_premium} (Type: {type(is_premium).__name__})")
-```
 
 ---
 
@@ -388,66 +362,6 @@ message = "My age is " + str(age) + " years old."
 print(message)        # "My age is 20 years old."
 ```
 
-### Example 2: Online Shopping Price Calculation Program (예제 2: 쇼핑몰 가격 계산 프로그램)
-
-Let's create a program that calculates the total amount when buying items online.
-
-실생활에서 온라인 쇼핑을 할 때 상품 가격과 수량을 입력받아 총 금액을 계산하는 프로그램을 만들어봅시다.
-
-```python
-# Online shopping calculator (쇼핑몰 가격 계산 프로그램)
-print("=== Online Shopping Calculator ===")
-
-# User input (input() always returns string) (사용자 입력 (input()은 항상 문자열 반환))
-product_name = input("Product name: ")
-price_input = input("Product price: ")
-quantity_input = input("Quantity: ")
-
-# Convert string to number (문자열을 숫자로 변환)
-price = int(price_input)
-quantity = int(quantity_input)
-
-# Calculate total amount (총 금액 계산)
-total_price = price * quantity
-
-# Display results (결과 출력)
-print("\n=== Purchase Details ===")
-print(f"Product: {product_name}")
-print(f"Unit price: ${price:,}")
-print(f"Quantity: {quantity}")
-print(f"Total: ${total_price:,}")
-```
-
-### Example 3: Grade Average Calculator (예제 3: 성적 평균 계산기)
-
-This is a program that calculates the average of a student's three subject scores. The average must be displayed with decimals, so it's calculated as a float.
-
-학생의 세 과목 점수를 입력받아 평균을 계산하는 프로그램입니다. 평균은 소수점까지 표시해야 하므로 실수로 계산합니다.
-
-```python
-# Grade average calculator (성적 평균 계산 프로그램)
-print("=== Grade Average Calculator ===")
-
-# Student information input (학생 정보 입력)
-student_name = input("Student name: ")
-
-# Score input (convert string to integer) (점수 입력 (문자열을 정수로 변환))
-english = int(input("English score: "))
-history = int(input("History score: "))
-math = int(input("Math score: "))
-
-# Calculate average (integer to float for precise average calculation) (평균 계산 (정수를 실수로 변환하여 정확한 평균 계산))
-total = english + history + math
-average = total / 3  # Automatically returns float result
-
-# Display results (결과 출력)
-print(f"\n{student_name}'s Grades")
-print(f"English: {english}")
-print(f"History: {history}")
-print(f"Math: {math}")
-print(f"Total: {total}")
-print(f"Average: {average:.2f}")  # Display up to 2 decimal places (소수점 둘째 자리까지 표시)
-```
 
 ---
 
