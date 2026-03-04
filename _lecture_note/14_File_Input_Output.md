@@ -185,10 +185,6 @@ if os.path.exists("test.txt"):
 
 ---
 
-
-
----
-
 ## 📝 Key Concepts Summary (핵심 개념 정리)
 
 To work with files, use the `open()` function to open them and `close()` to close them. Using the `with` statement is recommended because it automatically closes the file.
