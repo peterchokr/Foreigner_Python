@@ -311,69 +311,7 @@ for i in range(1, 4):
 
 ---
 
-## 7️⃣ Infinite Loop Usage (무한 루프 활용)
 
-Use infinite loops when a program needs to run continuously.
-
-프로그램이 계속 실행되어야 할 때 무한 루프를 활용합니다.
-
-### Example 4: Simple Calculator (예제 4: 간단한 계산기)
-
-A program that continues calculating until exit.
-
-종료할 때까지 계속 계산하는 프로그램입니다.
-
-```python
-# Simple calculator (간단한 계산기)
-print("🔢" + "=" * 38 + "🔢")
-print("   Calculator")
-print("🔢" + "=" * 38 + "🔢")
-
-print("\nAvailable operations:")
-print("  + : Addition")
-print("  - : Subtraction")
-print("  * : Multiplication")
-print("  / : Division")
-print("  q : Exit")
-print("=" * 40)
-
-while True:
-    operator = input("\nChoose operation (+, -, *, /, q): ")
-  
-    # Exit (종료)
-    if operator == 'q' or operator == 'Q':
-        print("\nCalculator closed.")
-        break
-  
-    # Check for valid operator (올바른 연산자 체크)
-    if operator not in ['+', '-', '*', '/']:
-        print("❌ Please enter a valid operator.")
-        continue
-  
-    # Get numbers (숫자 입력)
-    num1 = float(input("First number: "))
-    num2 = float(input("Second number: "))
-  
-    # Perform calculation (계산)
-    if operator == '+':
-        result = num1 + num2
-    elif operator == '-':
-        result = num1 - num2
-    elif operator == '*':
-        result = num1 * num2
-    elif operator == '/':
-        if num2 == 0:
-            print("❌ Cannot divide by zero.")
-            continue
-        result = num1 / num2
-  
-    # Display result (결과 출력)
-    print("-" * 40)
-    print(f"Result: {num1} {operator} {num2} = {result}")
-    print("-" * 40)
-```
-
----
 
 ## 📝 Summary of Key Concepts (핵심 개념 정리)
 
