@@ -547,115 +547,7 @@ window.mainloop()
 
 ---
 
-## 8️⃣ Practical Example: To-Do List (실전 예제: 할 일 목록)
-
-A task management program using input and lists.
-
-입력과 리스트를 활용한 할 일 관리 프로그램입니다.
-
-```python
-import tkinter as tk
-
-def add_task():
-    """Add task (할 일 추가)"""
-    task = entry.get()
-    if task:
-        listbox.insert(tk.END, task)
-        entry.delete(0, tk.END)
-    else:
-        status_label.config(text="Please enter a task!", fg="red")
-
-def delete_task():
-    """Delete selected task (선택한 할 일 삭제)"""
-    try:
-        index = listbox.curselection()[0]
-        listbox.delete(index)
-        status_label.config(text="Deleted!", fg="green")
-    except IndexError:
-        status_label.config(text="Select a task to delete!", fg="red")
-
-def clear_all():
-    """Delete all (전체 삭제)"""
-    listbox.delete(0, tk.END)
-    status_label.config(text="All deleted!", fg="green")
-
-# Create window (윈도우 생성)
-window = tk.Tk()
-window.title("📝 To-Do List")
-window.geometry("400x500")
-window.config(bg="white")
-
-# Title (제목)
-title = tk.Label(
-    window,
-    text="Today's Tasks",
-    font=("Arial", 20, "bold"),
-    bg="white"
-)
-title.pack(pady=20)
-
-# Input area (입력 영역)
-entry_frame = tk.Frame(window, bg="white")
-entry_frame.pack(pady=10)
-
-entry = tk.Entry(entry_frame, width=25, font=("Arial", 12))
-entry.pack(side="left", padx=5)
-
-add_button = tk.Button(
-    entry_frame,
-    text="Add",
-    command=add_task,
-    bg="lightblue",
-    width=8
-)
-add_button.pack(side="left")
-
-# List area (리스트 영역)
-listbox = tk.Listbox(
-    window,
-    width=40,
-    height=12,
-    font=("Arial", 11)
-)
-listbox.pack(pady=10)
-
-# Button area (버튼 영역)
-button_frame = tk.Frame(window, bg="white")
-button_frame.pack(pady=10)
-
-delete_button = tk.Button(
-    button_frame,
-    text="Delete",
-    command=delete_task,
-    bg="lightcoral",
-    width=10
-)
-delete_button.pack(side="left", padx=5)
-
-clear_button = tk.Button(
-    button_frame,
-    text="Clear All",
-    command=clear_all,
-    bg="lightgray",
-    width=10
-)
-clear_button.pack(side="left", padx=5)
-
-# Status display (상태 표시)
-status_label = tk.Label(
-    window,
-    text="",
-    font=("Arial", 10),
-    bg="white"
-)
-status_label.pack(pady=5)
-
-window.mainloop()
-```
-
----
-
-## 9️⃣ grid() - Table-like Arrangement (grid() - 표 형태 배치)
+## 8️⃣ grid() - Table-like Arrangement (grid() - 표 형태 배치)
 
 Using `grid()`, you can arrange widgets like a table.
 
@@ -695,7 +587,7 @@ window.mainloop()
 
 ---
 
-## 🔟 Practical Example: Login Screen (실전 예제: 로그인 화면)
+## 9️⃣ Practical Example: Login Screen (실전 예제: 로그인 화면)
 
 A clean login screen using grid().
 
