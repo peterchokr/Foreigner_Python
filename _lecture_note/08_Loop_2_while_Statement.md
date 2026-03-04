@@ -107,39 +107,6 @@ while attempts < max_attempts:
             print("Maximum attempts exceeded.")
 ```
 
-### Example 2: Savings Goal Simulator (예제 2: 목표 저축 시뮬레이터)
-
-A simulation program that saves to a target amount.
-
-목표 금액까지 저축하는 시뮬레이션 프로그램입니다.
-
-```python
-# Savings goal simulator (목표 저축 시뮬레이터)
-print("💰" + "=" * 38 + "💰")
-print("   Savings Goal Achievement Simulator")
-print("💰" + "=" * 38 + "💰")
-
-target = int(input("\nTarget amount ($): "))
-monthly_save = int(input("Monthly savings ($): "))
-
-current = 0
-month = 0
-
-print("\n" + "=" * 40)
-print("Savings Simulation")
-print("=" * 40)
-
-while current < target:
-    month = month + 1
-    current = current + monthly_save
-  
-    print(f"Month {month}: ${current:,}")
-
-print("\n" + "=" * 40)
-print(f"🎉 Goal achieved in {month} months!")
-print(f"Total saved: ${current:,}")
-print("=" * 40)
-```
 
 ---
 
@@ -183,36 +150,6 @@ How break Works (break의 동작)
   Exit    ─────┘
 ```
 
-### Example 3: Number Finding Game (예제 3: 숫자 찾기 게임)
-
-A game that ends when you find the specific number.
-
-특정 숫자를 찾으면 종료하는 게임입니다.
-
-```python
-# Number finding game (숫자 찾기 게임)
-print("🎯" + "=" * 38 + "🎯")
-print("   Number Finding Game")
-print("🎯" + "=" * 38 + "🎯")
-
-import random
-secret_number = random.randint(1, 100)
-attempts = 0
-
-print("\nGuess a number between 1 and 100!")
-
-while True:
-    attempts = attempts + 1
-    guess = int(input(f"\nAttempt {attempts}: "))
-  
-    if guess == secret_number:
-        print(f"\n🎉 Correct! You got it in {attempts} tries!")
-        break
-    elif guess < secret_number:
-        print("⬆️ UP! The number is higher")
-    else:
-        print("⬇️ DOWN! The number is lower")
-```
 
 ---
 
@@ -257,7 +194,7 @@ How continue Works (continue의 동작)
        Next Iteration
 ```
 
-### Example 4: Print Only Even Numbers (예제 4: 짝수만 출력)
+### Example 2: Print Only Even Numbers (예제 2: 짝수만 출력)
 
 A program that prints only even numbers from 1 to 20.
 
@@ -284,7 +221,7 @@ Creating infinite loops and breaking out with specific conditions is a very usef
 
 무한 반복을 만들고 특정 조건에서 break로 빠져나오는 패턴은 매우 유용합니다.
 
-### Example 5: Shopping Cart (예제 5: 쇼핑 장바구니)
+### Example 3: Shopping Cart (예제 3: 쇼핑 장바구니)
 
 A program that adds products as desired and calculates the total when done.
 
@@ -372,62 +309,6 @@ for i in range(1, 4):
 #   Inner loop: 1
 ```
 
-### Example 6: Multiplication Table Game (예제 6: 구구단 게임)
-
-A game where you keep trying until you solve multiplication problems correctly.
-
-구구단 문제를 맞을 때까지 반복하는 게임입니다.
-
-```python
-# Multiplication table game (구구단 게임)
-print("📚" + "=" * 38 + "📚")
-print("   Multiplication Table Game")
-print("📚" + "=" * 38 + "📚")
-
-import random
-
-score = 0
-total_problems = 5
-
-print(f"\nSolve {total_problems} problems!")
-print("=" * 40)
-
-for problem_num in range(1, total_problems + 1):
-    # Generate random problem (랜덤 문제 생성)
-    num1 = random.randint(2, 9)
-    num2 = random.randint(1, 9)
-    correct_answer = num1 * num2
-  
-    print(f"\nProblem {problem_num}: {num1} × {num2} = ?")
-  
-    # Repeat until correct answer (정답을 맞을 때까지 반복)
-    while True:
-        answer = int(input("Answer: "))
-    
-        if answer == correct_answer:
-            print("✅ Correct!")
-            score = score + 1
-            break
-        else:
-            print("❌ Wrong. Try again!")
-
-# Announce results (결과 발표)
-print("\n" + "=" * 40)
-print("Game Results")
-print("=" * 40)
-print(f"Correct answers: {score}/{total_problems}")
-print(f"Accuracy: {score/total_problems*100:.0f}%")
-
-if score == total_problems:
-    print("\n🎉 Perfect!")
-elif score >= total_problems * 0.7:
-    print("\n👍 Great job!")
-else:
-    print("\n💪 Try again!")
-
-print("=" * 40)
-```
-
 ---
 
 ## 7️⃣ Infinite Loop Usage (무한 루프 활용)
@@ -436,7 +317,7 @@ Use infinite loops when a program needs to run continuously.
 
 프로그램이 계속 실행되어야 할 때 무한 루프를 활용합니다.
 
-### Example 7: Simple Calculator (예제 7: 간단한 계산기)
+### Example 4: Simple Calculator (예제 4: 간단한 계산기)
 
 A program that continues calculating until exit.
 
