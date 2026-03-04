@@ -129,60 +129,7 @@ fruits.clear()
 print(fruits)  # []
 ```
 
-### Example 2: Shopping List (예제 2: 쇼핑 리스트)
 
-A program to manage shopping items.
-
-쇼핑 항목을 관리하는 프로그램입니다.
-
-```python
-# Shopping list management (쇼핑 리스트 관리)
-print("🛒" + "=" * 38 + "🛒")
-print("   Shopping List Manager")
-print("🛒" + "=" * 38 + "🛒")
-
-shopping_list = []
-
-while True:
-    print("\n1. Add item")
-    print("2. Remove item")
-    print("3. Show list")
-    print("4. Exit")
-  
-    choice = input("\nChoose: ")
-  
-    if choice == "1":
-        item = input("Item name: ")
-        shopping_list.append(item)
-        print(f"✓ {item} added!")
-  
-    elif choice == "2":
-        if len(shopping_list) == 0:
-            print("List is empty!")
-            continue
-  
-        for i, item in enumerate(shopping_list):
-            print(f"{i+1}. {item}")
-  
-        try:
-            index = int(input("Item number to remove: ")) - 1
-            removed = shopping_list.pop(index)
-            print(f"✓ {removed} removed!")
-        except:
-            print("Invalid number!")
-  
-    elif choice == "3":
-        if len(shopping_list) == 0:
-            print("List is empty!")
-        else:
-            print("\nShopping List:")
-            for i, item in enumerate(shopping_list, 1):
-                print(f"  {i}. {item}")
-  
-    elif choice == "4":
-        print("Goodbye!")
-        break
-```
 
 ---
 
@@ -231,40 +178,7 @@ list1 = [1, 2, 3]
 list2 = list1.copy()  # Independent copy (독립적인 복사본)
 ```
 
-### Example 3: Grade Sorter (예제 3: 성적 정렬)
 
-A program that sorts students by grades.
-
-학생들을 성적순으로 정렬하는 프로그램입니다.
-
-```python
-# Grade sorting program (성적 정렬 프로그램)
-print("📊" + "=" * 38 + "📊")
-print("   Grade Ranking System")
-print("📊" + "=" * 38 + "📊")
-
-# Student data (학생 데이터)
-students = [
-    ["Alice", 95],
-    ["Bob", 87],
-    ["Charlie", 92],
-    ["David", 78],
-    ["Emma", 88]
-]
-
-print("\nOriginal order:")
-for name, grade in students:
-    print(f"  {name}: {grade}")
-
-# Sort by grade (성적순 정렬)
-students.sort(key=lambda x: x[1], reverse=True)
-
-print("\nRanked by grade:")
-for i, (name, grade) in enumerate(students, 1):
-    print(f"  {i}. {name}: {grade}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -288,36 +202,6 @@ evens = [x for x in range(1, 11) if x % 2 == 0]
 print(evens)  # [2, 4, 6, 8, 10]
 ```
 
-### Example 4: Data Processing (예제 4: 데이터 처리)
-
-Processing data with list comprehension.
-
-리스트 컴프리헨션을 사용한 데이터 처리입니다.
-
-```python
-# Data processing with list comprehension (리스트 컴프리헨션으로 데이터 처리)
-print("📊" + "=" * 38 + "📊")
-print("   Data Processing")
-print("📊" + "=" * 38 + "📊")
-
-# Original prices (원래 가격)
-prices = [100, 250, 150, 300, 200]
-print(f"\nOriginal prices: {prices}")
-
-# Apply 20% discount (20% 할인 적용)
-discounted = [p * 0.8 for p in prices]
-print(f"After 20% discount: {discounted}")
-
-# Filter items over $200 (200 이상 항목)
-expensive = [p for p in prices if p >= 200]
-print(f"Items over $200: {expensive}")
-
-# Convert to dollars format ($로 변환)
-formatted = [f"${p:.2f}" for p in prices]
-print(f"Formatted: {formatted}")
-
-print("=" * 40)
-```
 
 ---
 
