@@ -190,29 +190,6 @@ calculate_sum(7, 3)
 # 7 + 3 = 10
 ```
 
-### Example 3: Discount Calculator (예제 3: 할인 계산)
-
-A function that calculates discounted prices.
-
-할인된 가격을 계산하는 함수입니다.
-
-```python
-# Discount calculator (할인 계산기)
-def show_discount(product, original_price, discount_rate):
-    discount_amount = original_price * (discount_rate / 100)
-    final_price = original_price - discount_amount
-  
-    print(f"Product: {product}")
-    print(f"Original price: ${original_price}")
-    print(f"Discount: {discount_rate}% (-${discount_amount})")
-    print(f"Final price: ${final_price}")
-    print("-" * 40)
-
-# Call with different products (다른 상품으로 호출)
-show_discount("Laptop", 1000, 10)
-show_discount("Monitor", 300, 20)
-show_discount("Keyboard", 80, 15)
-```
 
 ---
 
@@ -250,7 +227,7 @@ print(f"Sum 1: {sum1}")  # Output: Sum 1: 15
 print(f"Sum 2: {sum2}")  # Output: Sum 2: 300
 ```
 
-### Example 4: Grade Calculation (예제 4: 등급 계산)
+### Example 3: Grade Calculation (예제 3: 등급 계산)
 
 A function that determines grade from a score.
 
@@ -287,38 +264,6 @@ print(f"Score {score3} → Grade {get_grade(score3)}")
 # Score 55 → Grade F
 ```
 
-### Example 5: Rectangle Calculator (예제 5: 사각형 계산기)
-
-A function that calculates area and perimeter of a rectangle.
-
-사각형의 넓이와 둘레를 계산하는 함수입니다.
-
-```python
-# Rectangle area calculation (사각형 넓이 계산)
-def calculate_area(width, height):
-    area = width * height
-    return area
-
-# Rectangle perimeter calculation (사각형 둘레 계산)
-def calculate_perimeter(width, height):
-    perimeter = 2 * (width + height)
-    return perimeter
-
-# Use functions (함수 사용)
-print("🔷 Rectangle Calculator")
-print("=" * 40)
-
-width = 10
-height = 5
-
-area = calculate_area(width, height)
-perimeter = calculate_perimeter(width, height)
-
-print(f"Width: {width}, Height: {height}")
-print(f"Area: {area}")
-print(f"Perimeter: {perimeter}")
-print("=" * 40)
-```
 
 ---
 
@@ -346,42 +291,6 @@ print(f"Maximum: {max_value}")
 # Maximum: 50
 ```
 
-### Example 6: Age Group Classifier (예제 6: 나이 그룹 분류)
-
-A function that classifies age groups and returns information.
-
-나이 그룹을 분류하여 정보를 반환하는 함수입니다.
-
-```python
-# Age group classifier (나이 그룹 분류 함수)
-def classify_age(age):
-    if age < 13:
-        group = "Child"
-        category = "🧒"
-    elif age < 18:
-        group = "Teen"
-        category = "👦"
-    elif age < 65:
-        group = "Adult"
-        category = "👨"
-    else:
-        group = "Senior"
-        category = "👴"
-  
-    return group, category  # Return multiple values (여러 값 반환)
-
-# Use function (함수 사용)
-print("👥 Age Classification System")
-print("=" * 40)
-
-ages = [10, 15, 30, 70]
-
-for age in ages:
-    group, emoji = classify_age(age)
-    print(f"Age {age}: {emoji} {group}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -406,7 +315,7 @@ greet_person("Bob")  # Output: Hello, Bob!
 greet_person("Charlie", "Good morning")  # Output: Good morning, Charlie!
 ```
 
-### Example 7: Product Pricing (예제 7: 상품 가격책정)
+### Example 4: Product Pricing (예제 4: 상품 가격책정)
 
 A function for calculating product pricing with tax.
 
