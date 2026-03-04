@@ -123,34 +123,7 @@ for i in range(5, 0, -1):
 # Output: 5 4 3 2 1
 ```
 
-### Example 1: Rocket Launch Countdown (예제 1: 로켓 발사 카운트다운)
 
-A program that counts down for rocket launch.
-
-로켓 발사 카운트다운을 만드는 프로그램입니다.
-
-```python
-# Rocket launch countdown (로켓 발사 카운트다운)
-print("🚀" + "=" * 38 + "🚀")
-print("   Rocket Launch Countdown")
-print("🚀" + "=" * 38 + "🚀")
-
-print("\nPreparing for launch...")
-print()
-
-# Countdown from 10 to 1 (10부터 1까지 카운트다운)
-for count in range(10, 0, -1):
-    print(f"  {count}...")
-
-print("\n🚀 Liftoff!!! 🚀")
-print()
-
-# Display altitude (상승 표시)
-for altitude in range(0, 101, 20):
-    print(f"Altitude: {altitude}m")
-
-print("\n✨ Launch successful!")
-```
 
 ---
 
@@ -189,49 +162,7 @@ for char in text:
 print(f"Number of vowels: {vowel_count}")  # 3
 ```
 
-### Example 2: Name Analyzer (예제 2: 이름 분석기)
 
-A program that analyzes an entered name.
-
-입력받은 이름을 분석하는 프로그램입니다.
-
-```python
-# Name analyzer program (이름 분석 프로그램)
-print("✨" + "=" * 38 + "✨")
-print("   Name Analyzer")
-print("✨" + "=" * 38 + "✨")
-
-name = input("\nEnter your name: ")
-
-# Analysis results (분석 결과)
-print("\n" + "=" * 40)
-print("Analysis Results")
-print("=" * 40)
-
-# 1. Number of characters (글자 수)
-print(f"Total characters: {len(name)}")
-
-# 2. Display each character (각 글자 출력)
-print("\nCharacter breakdown:")
-for i in range(len(name)):
-    print(f"  Position {i+1}: {name[i]}")
-
-# 3. Reverse spelling (거꾸로)
-print("\nReverse spelling:")
-reverse_name = ""
-for char in name:
-    reverse_name = char + reverse_name
-print(f"  {reverse_name}")
-
-# 4. Convert to uppercase (대문자로 (영문인 경우))
-print("\nUppercase conversion:")
-upper_name = ""
-for char in name:
-    upper_name = upper_name + char.upper()
-print(f"  {upper_name}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -252,7 +183,7 @@ for i in range(1, 11):
 print(f"\nFinal total: {total}")  # 55
 ```
 
-### Example 3: Savings Challenge Calculator (예제 3: 저금통 계산기)
+### Example 1: Savings Challenge Calculator (예제 1: 저금통 계산기)
 
 A program that tracks accumulated daily savings.
 
@@ -320,35 +251,6 @@ for i in range(1, 4):
 # (3, 1) (3, 2) (3, 3)
 ```
 
-### Example 4: Multiplication Table (예제 4: 구구단)
-
-A program that prints multiplication tables.
-
-구구단을 출력하는 프로그램입니다.
-
-```python
-# Multiplication table program (구구단 프로그램)
-print("📚" + "=" * 38 + "📚")
-print("   Multiplication Tables")
-print("📚" + "=" * 38 + "📚")
-
-start_table = int(input("\nStart table: "))
-end_table = int(input("End table: "))
-
-print("\n" + "=" * 40)
-
-# Display each table (각 단 출력)
-for table in range(start_table, end_table + 1):
-    print(f"\n[ Table {table} ]")
-    print("-" * 20)
-  
-    # Multiply from 1 to 9 (1부터 9까지 곱하기)
-    for num in range(1, 10):
-        result = table * num
-        print(f"{table} × {num} = {result}")
-
-print("\n" + "=" * 40)
-```
 
 ---
 
@@ -394,7 +296,7 @@ for i in range(5, 0, -1):
 # ★
 ```
 
-### Example 5: Pattern Generator (예제 5: 패턴 출력기)
+### Example 2: Pattern Generator (예제 5: 패턴 출력기)
 
 A program that prints various star patterns.
 
@@ -448,73 +350,6 @@ for i in range(height - 1, 0, -1):
     spaces = " " * (height - i)
     stars = "★" * (2 * i - 1)
     print(spaces + stars)
-
-print("=" * 40)
-```
-
----
-
-## 7️⃣ Practical Examples (실전 활용 예제)
-
-### Example 6: Test Score Analysis (예제 6: 시험 점수 분석)
-
-A program that analyzes multiple students' test scores.
-
-여러 학생의 점수를 입력받아 분석하는 프로그램입니다.
-
-```python
-# Test score analysis program (시험 점수 분석 프로그램)
-print("📝" + "=" * 38 + "📝")
-print("   Test Score Analysis")
-print("📝" + "=" * 38 + "📝")
-
-student_count = int(input("\nNumber of students: "))
-
-total_score = 0
-highest_score = 0
-lowest_score = 100
-pass_count = 0  # 60 or higher (60점 이상)
-
-print("\nEnter scores:")
-
-for i in range(1, student_count + 1):
-    score = int(input(f"Student {i}: "))
-  
-    # Accumulate total (합계 누적)
-    total_score = total_score + score
-  
-    # Find highest score (최고점 찾기)
-    if score > highest_score:
-        highest_score = score
-  
-    # Find lowest score (최저점 찾기)
-    if score < lowest_score:
-        lowest_score = score
-  
-    # Count passes (합격자 수 세기)
-    if score >= 60:
-        pass_count = pass_count + 1
-
-# Calculate average (평균 계산)
-average = total_score / student_count
-
-# Display results (결과 출력)
-print("\n" + "=" * 40)
-print("Analysis Results")
-print("=" * 40)
-print(f"Total students: {student_count}")
-print(f"Average score: {average:.1f}")
-print(f"Highest score: {highest_score}")
-print(f"Lowest score: {lowest_score}")
-print(f"Passes: {pass_count} ({pass_count/student_count*100:.0f}%)")
-
-# Grade distribution (등급 분포)
-print("\nGrade Distribution:")
-print("  A Grade (90+)")
-print("  B Grade (80-89)")
-print("  C Grade (70-79)")
-print("  D Grade (60-69)")
-print("  F Grade (below 60)")
 
 print("=" * 40)
 ```
