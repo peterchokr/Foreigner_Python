@@ -55,51 +55,7 @@ bmi = weight / ((height / 100) ** 2)
 print(f"BMI: {bmi:.2f}")
 ```
 
-### Example 1: Pizza Ordering System (예제 1: 피자 주문 시스템)
 
-Let's create a program to take pizza orders.
-
-피자를 주문하는 프로그램을 만들어봅시다.
-
-```python
-# Pizza ordering system (피자 주문 시스템)
-print("=" * 40)
-print("🍕 Deluxe Pizza Ordering System 🍕")
-print("=" * 40)
-
-# Get order information (주문 정보 입력)
-customer_name = input("\nCustomer name: ")
-phone = input("Phone number: ")
-pizza_type = input("Pizza type (Pepperoni/Cheese/Vegetarian): ")
-quantity = int(input("Quantity: "))
-
-# Calculate price (가격 계산)
-price_per_pizza = 15  # $15 per pizza
-total_price = price_per_pizza * quantity
-
-# Delivery fee (배달비)
-delivery_fee = 3
-
-# Final amount (최종 금액)
-final_price = total_price + delivery_fee
-
-# Print order confirmation (주문 확인서 출력)
-print("\n" + "=" * 40)
-print("Order Confirmation")
-print("=" * 40)
-print(f"Customer: {customer_name}")
-print(f"Phone: {phone}")
-print(f"Pizza type: {pizza_type} Pizza")
-print(f"Quantity: {quantity}")
-print("-" * 40)
-print(f"Pizza total: ${total_price:,} (${price_per_pizza} × {quantity})")
-print(f"Delivery fee: ${delivery_fee}")
-print("-" * 40)
-print(f"Total payment: ${final_price}")
-print("=" * 40)
-print("\nEstimated delivery time: 35-45 minutes")
-print("Thank you for ordering! 🍕")
-```
 
 ---
 
@@ -174,55 +130,6 @@ score = 0.85
 print(f"Score: {score:.1%}")  # Score: 85.0%
 ```
 
-### Example 2: School Report Card Program (예제 2: 학교 성적 보고서)
-
-```python
-# School report card program (학교 성적 보고서)
-print("=" * 50)
-print("STUDENT REPORT CARD")
-print("=" * 50)
-
-# Get student information (학생 정보 입력)
-student_name = input("Student name: ")
-student_id = input("Student ID: ")
-
-# Get subject scores (과목 점수 입력)
-english = int(input("English score: "))
-history = int(input("History score: "))
-math = int(input("Math score: "))
-science = int(input("Science score: "))
-
-# Calculate average (평균 계산)
-total = english + history + math + science
-average = total / 4
-
-# Determine grade (등급 결정)
-if average >= 90:
-    grade = "A"
-elif average >= 80:
-    grade = "B"
-elif average >= 70:
-    grade = "C"
-elif average >= 60:
-    grade = "D"
-else:
-    grade = "F"
-
-# Display report (성적 보고서 출력)
-print("\n" + "=" * 50)
-print(f"{'Name:':<20} {student_name}")
-print(f"{'Student ID:':<20} {student_id}")
-print("-" * 50)
-print(f"{'English:':<20} {english:>5d}")
-print(f"{'History:':<20} {history:>5d}")
-print(f"{'Math:':<20} {math:>5d}")
-print(f"{'Science:':<20} {science:>5d}")
-print("-" * 50)
-print(f"{'Total:':<20} {total:>5d}")
-print(f"{'Average:':<20} {average:>6.2f}")
-print(f"{'Grade:':<20} {grade:>5s}")
-print("=" * 50)
-```
 
 ---
 
