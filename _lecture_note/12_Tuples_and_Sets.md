@@ -178,40 +178,6 @@ difference = set1 - set2  # {1, 2}
 print(difference)
 ```
 
-### Example 2: Unique Student IDs (예제 2: 중복 없는 학생 ID)
-
-A program that removes duplicate student IDs using a set.
-
-세트를 사용하여 중복된 학생 ID를 제거하는 프로그램입니다.
-
-```python
-# Student ID deduplication (학생 ID 중복 제거)
-print("👥" + "=" * 38 + "👥")
-print("   Unique Student ID Manager")
-print("👥" + "=" * 38 + "👥")
-
-# Student IDs with duplicates (중복된 학생 ID)
-student_ids = [
-    "SB001", "SB002", "SB003", "SB002",
-    "SB004", "SB001", "SB005", "SB003"
-]
-
-print(f"\nOriginal count: {len(student_ids)}")
-print(f"IDs: {student_ids}")
-
-# Remove duplicates using set (세트로 중복 제거)
-unique_ids = set(student_ids)
-print(f"\nUnique count: {len(unique_ids)}")
-print(f"Unique IDs: {sorted(unique_ids)}")
-
-# Convert back to sorted list (정렬된 리스트로 변환)
-final_ids = sorted(list(unique_ids))
-print(f"\nSorted IDs:")
-for id_num in final_ids:
-    print(f"  {id_num}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -239,7 +205,7 @@ set1 = {1, 2, 3}
 set2 = set1.copy()
 ```
 
-### Example 3: Common Elements (예제 3: 공통 요소 찾기)
+### Example 2: Common Elements (예제 2: 공통 요소 찾기)
 
 Finding common interests between friends.
 
@@ -293,45 +259,7 @@ my_set = {1, 2, 2, 3, 3, 3}
 print(my_set)  # {1, 2, 3}
 ```
 
-### Example 4: Grade Tracker (예제 4: 성적 추적)
 
-A program that tracks student grades using different data structures.
-
-다양한 자료구조를 사용하여 학생 성적을 추적하는 프로그램입니다.
-
-```python
-# Grade tracking system (성적 추적 시스템)
-print("📊" + "=" * 38 + "📊")
-print("   Grade Tracking System")
-print("📊" + "=" * 38 + "📊")
-
-# Student grades (학생 성적)
-# Using tuple for immutable grade records (변경 불가능한 성적 기록)
-alice_grades = (95, 87, 92, 88)
-bob_grades = (78, 82, 85, 80)
-
-# Calculate average (평균 계산)
-alice_avg = sum(alice_grades) / len(alice_grades)
-bob_avg = sum(bob_grades) / len(bob_grades)
-
-print(f"\nAlice's grades: {alice_grades}")
-print(f"Alice's average: {alice_avg:.1f}")
-
-print(f"\nBob's grades: {bob_grades}")
-print(f"Bob's average: {bob_avg:.1f}")
-
-# Using set to find unique grades (고유한 성적을 찾기)
-all_grades_set = set(alice_grades) | set(bob_grades)
-print(f"\nAll unique grades: {sorted(all_grades_set)}")
-
-# Using list for mutable grade list (변경 가능한 성적 목록)
-grades_list = [95, 87, 92, 88, 78, 82, 85, 80]
-print(f"\nAll grades: {grades_list}")
-print(f"Highest: {max(grades_list)}")
-print(f"Lowest: {min(grades_list)}")
-
-print("=" * 40)
-```
 
 ---
 
