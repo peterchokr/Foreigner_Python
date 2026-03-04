@@ -175,56 +175,6 @@ When you run this program, the message "Enter your name: " appears and waits for
 
 이 프로그램을 실행하면 "Enter your name: "라는 메시지가 나타나고, 여러분이 이름을 입력하고 Enter를 누르면 개인화된 환영 메시지가 출력됩니다. `input()` 함수는 사용자로부터 키보드 입력을 받는 함수이며, 입력받은 값을 `name`이라는 변수에 저장합니다. 변수는 데이터를 담는 상자라고 생각하면 됩니다.
 
-### Example 3: Simple Calculator (예제 3: 간단한 계산기)
-
-Python can perform simple calculations. Let's create a program that adds two numbers.
-
-파이썬으로 간단한 계산을 할 수 있습니다. 두 숫자를 더하는 프로그램을 만들어봅시다.
-
-```python
-# Simple addition calculator (간단한 덧셈 계산기)
-print("=== Simple Addition Calculator ===")
-
-# Get first number input (첫 번째 숫자 입력받기)
-num1 = input("Enter the first number: ")
-num1 = int(num1)  # Convert string to integer (문자열을 정수로 변환)
-
-# Get second number input (두 번째 숫자 입력받기)
-num2 = input("Enter the second number: ")
-num2 = int(num2)  # Convert string to integer (문자열을 정수로 변환)
-
-# Calculate and display result (계산 및 결과 출력)
-result = num1 + num2
-print(num1, "+", num2, "=", result)
-```
-
-This program is like using a calculator in real life. When the user enters two numbers, the program automatically adds them and shows the result. The important point here is that the `input()` function always returns a string. Therefore, to perform numeric calculations, you must use the `int()` function to convert the string to an integer.
-
-이 프로그램은 실생활에서 계산기를 사용하는 것과 비슷합니다. 사용자가 두 개의 숫자를 입력하면 프로그램이 자동으로 더해서 결과를 보여줍니다. 여기서 중요한 점은 `input()` 함수가 항상 문자열을 반환한다는 것입니다. 따라서 숫자 계산을 하려면 `int()` 함수를 사용해서 문자열을 정수(integer)로 변환해야 합니다.
-
-```
-Program Execution Flow (프로그램 실행 흐름)
-
-1. Program starts (프로그램 시작)
-   ↓
-2. Display "Enter the first number:" (첫 번째 숫자 입력 메시지 출력)
-   ↓
-3. Wait for user input (예: 10) (사용자 입력 대기)
-   ↓
-4. Convert string "10" to integer 10 (문자열 "10"을 정수 10으로 변환)
-   ↓
-5. Display "Enter the second number:" (두 번째 숫자 입력 메시지 출력)
-   ↓
-6. Wait for user input (예: 20) (사용자 입력 대기)
-   ↓
-7. Convert string "20" to integer 20 (문자열 "20"을 정수 20으로 변환)
-   ↓
-8. Calculate 10 + 20 = 30 (10 + 20 계산 = 30)
-   ↓
-9. Display "10 + 20 = 30" (출력)
-   ↓
-10. Program terminates (프로그램 종료)
-```
 
 ---
 
