@@ -18,7 +18,7 @@ Until now, we have written all of our code inside a single Python file. But what
 
 A **Module** is a solution to this problem. A module is a Python file (`.py`) that groups related functions, variables, and classes together. Think of it like a toolbox — a collection of tools (functions) organized by type.
 
-이런 문제를 해결하기 위해 **모듈(Module)**이 등장했습니다. 모듈은 관련된 함수, 변수, 클래스 등을 하나의 파이썬 파일(`.py`)에 모아둔 것입니다. 마치 도구 상자처럼, 필요한 도구(함수)들을 종류별로 정리해둔 것이라고 생각하면 됩니다.
+이런 문제를 해결하기 위해 **모듈(Module)** 이 등장했습니다. 모듈은 관련된 함수, 변수, 클래스 등을 하나의 파이썬 파일(`.py`)에 모아둔 것입니다. 마치 도구 상자처럼, 필요한 도구(함수)들을 종류별로 정리해둔 것이라고 생각하면 됩니다.
 
 For example, math-related functions are collected in the `math` module, and date/time functions in the `datetime` module.
 
@@ -56,22 +56,22 @@ Using modules provides the following advantages:
 
 모듈을 사용하면 다음과 같은 장점이 있습니다:
 
-**1. Reusability (코드 재사용)**
+**1. Reusability (코드 재사용)**   
 Code you write once can be used across multiple programs. For example, if you create calculator functions, you can reuse them in homework programs, games, and shopping apps — no need to rewrite the same code every time!
 
 한 번 작성한 코드를 여러 프로그램에서 사용할 수 있습니다. 예를 들어, 계산기 함수를 만들었다면 숙제 프로그램에서도, 게임에서도, 쇼핑몰 프로그램에서도 사용할 수 있습니다. 똑같은 코드를 매번 다시 작성할 필요가 없죠!
 
-**2. Maintainability (코드 관리)**
+**2. Maintainability (코드 관리)**   
 Splitting a large program into multiple files by function makes it easier to manage. Organizing file-related features in `file_utils.py` and math features in `math_utils.py` makes it much easier to find and modify specific features later.
 
 큰 프로그램을 기능별로 여러 파일로 나누면 관리가 쉬워집니다. 파일 관련 기능은 `file_utils.py`에, 계산 관련 기능은 `math_utils.py`에 넣는 식으로 정리하면, 나중에 특정 기능을 수정하거나 찾을 때 훨씬 편리합니다.
 
-**3. Collaboration (협업)**
+**3. Collaboration (협업)**   
 In team projects, each member can create separate modules for their assigned features and work simultaneously. A can write `user_module.py` while B writes `product_module.py`.
 
 팀 프로젝트에서 각자 맡은 기능을 별도의 모듈로 만들면 동시에 작업할 수 있습니다. A는 `user_module.py`를 작성하고, B는 `product_module.py`를 작성하는 식으로 분업이 가능합니다.
 
-**4. Namespace (이름 충돌 방지)**
+**4. Namespace (이름 충돌 방지)**   
 Functions with the same name in different modules do not conflict. `module1.calculate()` and `module2.calculate()` are treated as different functions.
 
 서로 다른 모듈에 같은 이름의 함수가 있어도 문제없습니다. `module1.calculate()`와 `module2.calculate()`는 다른 함수로 취급됩니다.
@@ -153,74 +153,7 @@ Aliases are especially useful when working with long module names. For example, 
 
 별칭은 특히 이름이 긴 모듈을 사용할 때 유용합니다. 예를 들어 `numpy` 모듈은 거의 항상 `np`라는 별칭으로 사용합니다.
 
-### Example 1: Scientific Calculator (예제 1: 수학 계산기)
 
-This is a scientific calculator using the math module.
-
-math 모듈을 활용한 과학 계산기입니다.
-
-```python
-# Scientific calculator program (과학 계산기 프로그램)
-import math
-
-print("🔢" + "=" * 38 + "🔢")
-print("   Scientific Calculator")
-print("🔢" + "=" * 38 + "🔢")
-
-while True:
-    print("\n" + "=" * 40)
-    print("1. Square Root (제곱근)")
-    print("2. Power (거듭제곱)")
-    print("3. Logarithm (로그)")
-    print("4. Trigonometry - sin, cos, tan (삼각함수)")
-    print("5. Factorial (팩토리얼)")
-    print("6. Circle Area (원의 넓이)")
-    print("7. Exit (종료)")
-    print("=" * 40)
-
-    choice = input("\nChoice (선택): ")
-
-    if choice == "1":
-        num = float(input("\nNumber (숫자): "))
-        result = math.sqrt(num)  # Square root (제곱근)
-        print(f"√{num} = {result}")
-
-    elif choice == "2":
-        base = float(input("\nBase (밑): "))
-        exp = float(input("Exponent (지수): "))
-        result = math.pow(base, exp)  # Power (거듭제곱)
-        print(f"{base}^{exp} = {result}")
-
-    elif choice == "3":
-        num = float(input("\nNumber (숫자): "))
-        result = math.log10(num)  # Log base 10 (로그)
-        print(f"log₁₀({num}) = {result}")
-
-    elif choice == "4":
-        degree = float(input("\nAngle in degrees (각도 / 도): "))
-        radian = math.radians(degree)  # Convert to radians (라디안으로 변환)
-
-        print(f"\nsin({degree}°) = {math.sin(radian):.4f}")
-        print(f"cos({degree}°) = {math.cos(radian):.4f}")
-        print(f"tan({degree}°) = {math.tan(radian):.4f}")
-
-    elif choice == "5":
-        num = int(input("\nNumber (숫자): "))
-        result = math.factorial(num)  # Factorial (팩토리얼)
-        print(f"{num}! = {result}")
-
-    elif choice == "6":
-        radius = float(input("\nRadius (반지름): "))
-        area = math.pi * radius ** 2  # Circle area (원의 넓이)
-        print(f"Area (넓이) = {area:.2f}")
-
-    elif choice == "7":
-        print("\nExiting the calculator. (계산기를 종료합니다.)")
-        break
-
-    else:
-        print("Invalid choice. (잘못된 선택입니다.)")
-```
 
 ---
 
@@ -313,42 +246,6 @@ print(f"Days since birth (태어난 지): {age_days} days")
 - `%A`: Weekday name (요일, e.g. Monday)
 - `%B`: Month name (월 이름, e.g. January)
 
-### Example 2: Lotto Number Generator (예제 2: 로또 번호 생성기)
-
-A lotto number generator using the random module.
-
-random 모듈을 사용한 로또 번호 생성기입니다.
-
-```python
-# Lotto number generator (로또 번호 생성기)
-import random
-
-print("🎰" + "=" * 38 + "🎰")
-print("   Lotto Number Generator (로또 번호 생성기)")
-print("🎰" + "=" * 38 + "🎰")
-
-while True:
-    print("\nHow many sets to generate? (Enter 0 to exit)")
-    print("생성할 번호 세트 개수 (종료: 0): ", end="")
-    count = int(input())
-
-    if count == 0:
-        print("\nExiting program. (프로그램을 종료합니다.)")
-        break
-
-    print("\n" + "=" * 40)
-    print("🍀 Lucky Numbers (행운의 번호)")
-    print("=" * 40)
-
-    for i in range(count):
-        # Pick 6 numbers from 1 to 45 (1~45 중 6개 선택)
-        numbers = random.sample(range(1, 46), 6)
-        numbers.sort()  # Sort ascending (오름차순 정렬)
-
-        print(f"Set {i+1} (번호 {i+1}): {numbers}")
-
-    print("=" * 40)
-```
 
 ---
 
