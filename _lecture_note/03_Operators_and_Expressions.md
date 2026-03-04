@@ -84,36 +84,7 @@ Arithmetic Operators Summary (산술 연산자 정리)
 └─────────────┴──────────┴─────────────┘
 ```
 
-### Example 1: Online Store Discount Calculator (예제 1: 쇼핑몰 할인 계산기)
 
-Let's create a program to calculate discounted prices when shopping online.
-
-실생활에서 온라인 쇼핑을 할 때 할인가를 계산하는 프로그램을 만들어봅시다.
-
-```python
-# Online store discount calculator (쇼핑몰 할인 계산 프로그램)
-print("=== Online Store Discount Calculator ===")
-
-# Get product information (상품 정보 입력)
-original_price = int(input("Original price: "))
-discount_rate = int(input("Discount rate (example: 20): "))
-
-# Calculate discount amount (할인 금액 계산)
-discount_amount = original_price * discount_rate / 100
-
-# Calculate final price (최종 가격 계산)
-final_price = original_price - discount_amount
-
-# Display results (결과 출력)
-print(f"\nOriginal price: ${original_price:,}")
-print(f"Discount rate: {discount_rate}%")
-print(f"Discount amount: ${discount_amount:,.0f}")
-print(f"Final price: ${final_price:,.0f}")
-```
-
-This program calculates the discount amount by multiplying the original price by the discount rate, and then calculates the final price by subtracting the discount amount from the original price. It's the same calculation method used in actual online stores.
-
-이 프로그램은 원가에 할인율을 곱해서 할인 금액을 계산하고, 원가에서 할인 금액을 빼서 최종 가격을 구합니다. 실제 쇼핑몰 앱에서 사용하는 것과 같은 계산 방식입니다.
 
 ---
 
@@ -168,29 +139,6 @@ if x == 10:  # Comparison operator
     print("x is 10")
 ```
 
-### Example 2: Age Verification Program (예제 2: 나이 확인 프로그램)
-
-This is a program that takes a user's age as input and determines whether they are an adult or minor.
-
-사용자의 나이를 입력받아 성인인지 미성년자인지 판별하는 프로그램입니다.
-
-```python
-# Age verification system (나이 확인 프로그램)
-print("=== Age Verification System ===")
-
-age = int(input("Enter your age: "))
-
-# Check if adult (성인 여부 확인)
-is_adult = age >= 18
-
-print(f"\nYour age: {age} years old")
-print(f"Adult: {is_adult}")
-
-if is_adult:
-    print("You are an adult. You can access all content.")
-else:
-    print("You are a minor. Some content is restricted.")
-```
 
 ---
 
@@ -271,43 +219,7 @@ NOT Operator
 └───────┴────────┘
 ```
 
-### Example 3: Grade Judgment System (예제 3: 학점 판정 시스템)
 
-This is a program that evaluates a student's pass status by comprehensively considering attendance and test scores.
-
-학생의 출석률과 시험 점수를 종합하여 합격 여부를 판정하는 프로그램입니다.
-
-```python
-# Grade judgment system (학점 판정 시스템)
-print("=== Grade Judgment System ===")
-
-# Get student information (학생 정보 입력)
-attendance_rate = int(input("Attendance rate (0-100): "))
-exam_score = int(input("Exam score (0-100): "))
-
-# Pass condition: attendance >= 80% AND exam score >= 60 (합격 조건)
-passed = attendance_rate >= 80 and exam_score >= 60
-
-# Excellent student: attendance >= 95% AND exam score >= 90 (우수 학생)
-excellent = attendance_rate >= 95 and exam_score >= 90
-
-# Retake required: attendance < 80% OR exam score < 60 (재수강 대상)
-retake = attendance_rate < 80 or exam_score < 60
-
-# Display results (결과 출력)
-print(f"\nAttendance rate: {attendance_rate}%")
-print(f"Exam score: {exam_score}")
-print(f"Passed: {passed}")
-print(f"Excellent student: {excellent}")
-print(f"Retake required: {retake}")
-
-if excellent:
-    print("Congratulations! You are an excellent student.")
-elif passed:
-    print("Congratulations! You have passed.")
-else:
-    print("You need to retake this course.")
-```
 
 ---
 
@@ -370,41 +282,7 @@ count += 1  # Increase by 1
 print(f"Count: {count}")  # 3
 ```
 
-### Example 4: Game Score Calculation (예제 4: 게임 점수 계산)
 
-This is a program that accumulates scores and increases level during a game.
-
-게임에서 점수를 누적하고 레벨을 올리는 프로그램입니다.
-
-```python
-# Game score system (게임 점수 계산 프로그램)
-print("=== Game Score System ===")
-
-# Initialize (초기값 설정)
-score = 0
-level = 1
-
-# Game progress (게임 진행)
-print("Stage 1 Complete!")
-score += 100
-print(f"Current score: {score}")
-
-print("\nBonus item obtained!")
-score *= 2  # Double score (점수 2배)
-print(f"Current score: {score}")
-
-print("\nStage 2 Complete!")
-score += 150
-print(f"Current score: {score}")
-
-# Check level up condition (300 points or more) (레벨업 조건 확인)
-if score >= 300:
-    level += 1
-    print(f"\nLevel up! Current level: {level}")
-
-print(f"\nFinal score: {score}")
-print(f"Final level: {level}")
-```
 
 ---
 
@@ -467,41 +345,6 @@ average = (english + history + math) / 3
 print(average)  # 87.66666... (correct result)
 ```
 
-### Example 5: Online Shopping Final Amount Calculation (예제 5: 온라인 쇼핑 최종 금액 계산)
-
-This is a program that calculates the final payment amount considering product price, shipping fee, and discount coupon.
-
-상품 가격, 배송비, 할인 쿠폰을 고려하여 최종 결제 금액을 계산하는 프로그램입니다.
-
-```python
-# Online shopping checkout calculator (온라인 쇼핑 최종 금액 계산)
-print("=== Online Shopping Checkout Calculator ===")
-
-# Get input (입력)
-product_price = int(input("Product price: "))
-quantity = int(input("Quantity: "))
-shipping_fee = int(input("Shipping fee: "))
-coupon_discount = int(input("Coupon discount: "))
-
-# Calculate (mind operator precedence) (계산 (우선순위에 주의))
-subtotal = product_price * quantity  # Product total (상품 금액)
-total_before_discount = subtotal + shipping_fee  # Include shipping (배송비 포함)
-final_price = total_before_discount - coupon_discount  # Apply coupon discount (쿠폰 할인)
-
-# Check free shipping condition (50,000 or more) (무료 배송 조건 확인)
-if subtotal >= 50000:
-    final_price -= shipping_fee
-    free_shipping = True
-else:
-    free_shipping = False
-
-# Display results (결과 출력)
-print(f"\nProduct total: ${subtotal:,}")
-print(f"Shipping fee: ${shipping_fee:,}")
-print(f"Coupon discount: ${coupon_discount:,}")
-print(f"Free shipping: {free_shipping}")
-print(f"Final payment: ${final_price:,}")
-```
 
 ---
 
@@ -559,43 +402,6 @@ pattern = "♥" * 5
 print(pattern)  # ♥♥♥♥♥
 ```
 
-### Example 6: Receipt Printer Program (예제 6: 영수증 출력 프로그램)
-
-This is a program that prints purchase receipts in a nicely formatted manner.
-
-상품 구매 내역을 보기 좋은 형식의 영수증으로 출력하는 프로그램입니다.
-
-```python
-# Receipt generator (영수증 출력 프로그램)
-print("=== Receipt Generator ===")
-
-# Store information (상점 정보)
-store_name = "Python Market"
-store_address = "123 Python Street, San Francisco, CA"
-
-# Get purchase information (구매 정보 입력)
-product_name = input("Product: ")
-unit_price = int(input("Unit price: "))
-quantity = int(input("Quantity: "))
-
-# Calculate (계산)
-total_price = unit_price * quantity
-
-# Print receipt (영수증 출력)
-line = "=" * 40
-print("\n" + line)
-print(store_name.center(40))  # Center align (중앙 정렬)
-print(store_address.center(40))
-print(line)
-print("Product".ljust(20) + "Qty".rjust(10) + "Price".rjust(10))
-print(line)
-print(product_name.ljust(20) + str(quantity).rjust(10) + f"${unit_price:,}".rjust(10))
-print(line)
-print("Total".ljust(30) + f"${total_price:,}".rjust(10))
-print(line)
-print("\nThank you!".center(40))
-print(line)
-```
 
 ---
 
