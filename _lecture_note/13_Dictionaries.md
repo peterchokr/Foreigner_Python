@@ -154,40 +154,7 @@ print(student.get("id"))  # None (No error!)
 print(student.get("id", "Information unavailable"))  # Information unavailable
 ```
 
-### Example 2: English Dictionary (예제 2: 영어 사전)
 
-A simple English-Korean dictionary program.
-
-간단한 영어 한국어 사전 프로그램입니다.
-
-```python
-# English-Korean dictionary (영어-한국어 사전)
-print("📖" + "=" * 38 + "📖")
-print("   English Dictionary")
-print("📖" + "=" * 38 + "📖")
-
-dictionary = {
-    "hello": "안녕하세요",
-    "goodbye": "안녕히 가세요",
-    "thank you": "감사합니다",
-    "please": "부탁합니다",
-    "love": "사랑",
-    "dream": "꿈"
-}
-
-while True:
-    word = input("\nEnter English word (or 'exit' to quit): ").lower()
-  
-    if word == "exit":
-        print("Thank you for using dictionary!")
-        break
-  
-    if word in dictionary:
-        meaning = dictionary[word]
-        print(f"'{word}' → '{meaning}'")
-    else:
-        print(f"'{word}' not found in dictionary.")
-```
 
 ---
 
@@ -218,70 +185,7 @@ major = student.pop("major")
 student.clear()
 ```
 
-### Example 3: Student Information System (예제 3: 학생 정보 시스템)
 
-A program that manages student information.
-
-학생 정보를 관리하는 프로그램입니다.
-
-```python
-# Student information system (학생 정보 시스템)
-print("👨‍🎓" + "=" * 38 + "👨‍🎓")
-print("   Student Information System")
-print("👨‍🎓" + "=" * 38 + "👨‍🎓")
-
-students = {}
-
-while True:
-    print("\n1. Add student")
-    print("2. View student")
-    print("3. List all students")
-    print("4. Delete student")
-    print("5. Exit")
-  
-    choice = input("\nChoose: ")
-  
-    if choice == "1":
-        student_id = input("Student ID: ")
-        name = input("Name: ")
-        grade = input("Grade: ")
-      
-        students[student_id] = {"name": name, "grade": grade}
-        print(f"✓ {name} added!")
-  
-    elif choice == "2":
-        student_id = input("Student ID: ")
-      
-        if student_id in students:
-            info = students[student_id]
-            print(f"\nStudent ID: {student_id}")
-            print(f"Name: {info['name']}")
-            print(f"Grade: {info['grade']}")
-        else:
-            print("Student not found!")
-  
-    elif choice == "3":
-        if len(students) == 0:
-            print("No students!")
-        else:
-            print("\nStudent List:")
-            for sid, info in students.items():
-                print(f"  {sid}: {info['name']} ({info['grade']})")
-  
-    elif choice == "4":
-        student_id = input("Student ID to delete: ")
-      
-        if student_id in students:
-            name = students[student_id]["name"]
-            del students[student_id]
-            print(f"✓ {name} deleted!")
-        else:
-            print("Student not found!")
-  
-    elif choice == "5":
-        print("Goodbye!")
-        break
-```
 
 ---
 
@@ -380,49 +284,7 @@ print(company["name"])  # Tech Corp
 print(company["employees"]["Alice"]["position"])  # Engineer
 ```
 
-### Example 5: School Database (예제 5: 학교 데이터베이스)
 
-A complex database system using nested dictionaries.
-
-중첩 딕셔너리를 사용한 복잡한 데이터베이스 시스템입니다.
-
-```python
-# School database (학교 데이터베이스)
-print("🏫" + "=" * 38 + "🏫")
-print("   School Database")
-print("🏫" + "=" * 38 + "🏫")
-
-school = {
-    "name": "Central High School",
-    "location": "New York",
-    "classes": {
-        "9A": {
-            "teacher": "Mr. Smith",
-            "students": ["Alice", "Bob", "Charlie"],
-            "count": 3
-        },
-        "9B": {
-            "teacher": "Ms. Johnson",
-            "students": ["David", "Emma", "Frank"],
-            "count": 3
-        }
-    }
-}
-
-print(f"\nSchool: {school['name']}")
-print(f"Location: {school['location']}")
-
-print("\nClass Information:")
-print("=" * 40)
-
-for class_name, info in school["classes"].items():
-    print(f"\nClass: {class_name}")
-    print(f"Teacher: {info['teacher']}")
-    print(f"Students: {', '.join(info['students'])}")
-    print(f"Count: {info['count']}")
-
-print("\n" + "=" * 40)
-```
 
 ---
 
