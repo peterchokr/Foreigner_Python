@@ -190,33 +190,7 @@ print("Hello".startswith("He")) # True
 print("Hello".endswith("lo"))   # True
 ```
 
-### Example 1: Text Processing Program (예제 1: 텍스트 처리 프로그램)
 
-```python
-# Text processing program (텍스트 처리 프로그램)
-print("=== Text Processing Tool ===")
-
-# Get user input (사용자 입력 받기)
-user_text = input("Enter text: ")
-
-# Process text (텍스트 처리)
-length = len(user_text)
-uppercase = user_text.upper()
-lowercase = user_text.lower()
-reversed_text = user_text[::-1]
-
-# Count vowels (모음 개수 세기)
-vowels = "aeiouAEIOU"
-vowel_count = sum(1 for char in user_text if char in vowels)
-
-# Display results (결과 출력)
-print(f"\nOriginal: {user_text}")
-print(f"Length: {length}")
-print(f"Uppercase: {uppercase}")
-print(f"Lowercase: {lowercase}")
-print(f"Reversed: {reversed_text}")
-print(f"Number of vowels: {vowel_count}")
-```
 
 ---
 
@@ -259,39 +233,7 @@ text2 = "My name is %s and I am %d years old" % ("Jessica Anderson", 28)
 print(text2)
 ```
 
-### Example 2: Invoice Generator (예제 2: 영수증 생성 프로그램)
 
-```python
-# Invoice generator program (영수증 생성 프로그램)
-print("=== Invoice Generator ===")
-
-# Get input (입력 받기)
-customer_name = input("Customer name: ")
-product = input("Product: ")
-unit_price = float(input("Unit price: $"))
-quantity = int(input("Quantity: "))
-
-# Calculate (계산)
-subtotal = unit_price * quantity
-tax = subtotal * 0.08  # 8% tax
-total = subtotal + tax
-
-# Display invoice (영수증 출력)
-line = "=" * 40
-print(f"\n{line}")
-print(f"{'INVOICE':^40}")
-print(f"{line}")
-print(f"Customer: {customer_name}")
-print(f"Product: {product}")
-print(f"{'-'*40}")
-print(f"Unit Price: ${unit_price:>10.2f}")
-print(f"Quantity: {quantity:>15}")
-print(f"Subtotal: ${subtotal:>13.2f}")
-print(f"Tax (8%): ${tax:>14.2f}")
-print(f"{'-'*40}")
-print(f"Total: ${total:>18.2f}")
-print(f"{line}\n")
-```
 
 ---
 
