@@ -100,47 +100,6 @@ print(count)  # 2
 
 ⚠️ **주의**: 전역 변수를 남용하면 코드가 복잡해지고 버그가 생기기 쉽습니다. 가능하면 매개변수와 반환값을 사용하세요!
 
-### Example 1: Game Score Management (예제 1: 게임 점수 관리)
-
-A program that manages game scores using global variables.
-
-전역 변수로 게임 점수를 관리하는 프로그램입니다.
-
-```python
-# Game score management system (게임 점수 관리 시스템)
-score = 0
-level = 1
-
-def get_score():
-    global score
-    return score
-
-def add_points(points):
-    global score
-    score = score + points
-    print(f"✨ {points} points added! Total: {score}")
-
-def level_up():
-    global level
-    level = level + 1
-    print(f"🎉 Level {level} reached!")
-
-print("🎮" + "=" * 38 + "🎮")
-print("   Game System")
-print("🎮" + "=" * 38 + "🎮")
-
-print(f"\nStarting score: {get_score()}")
-print(f"Starting level: {level}")
-
-add_points(100)
-add_points(50)
-level_up()
-
-print("\n" + "=" * 40)
-print(f"Current score: {get_score()}")
-print(f"Current level: {level}")
-print("=" * 40)
-```
 
 ---
 
@@ -183,36 +142,6 @@ sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
 print(sorted_students)  # [('Charlie', 90), ('Alice', 85), ('Bob', 75)]
 ```
 
-### Example 2: Data Processing (예제 2: 데이터 처리)
-
-Using lambda functions for data processing.
-
-람다 함수를 사용한 데이터 처리입니다.
-
-```python
-# Data processing with lambda functions (람다 함수를 사용한 데이터 처리)
-print("📊" + "=" * 38 + "📊")
-print("   Data Processing with Lambda")
-print("📊" + "=" * 38 + "📊")
-
-# Product prices (상품 가격)
-prices = [100, 250, 150, 300, 200]
-print(f"\nOriginal prices: {prices}")
-
-# Apply 10% discount (10% 할인 적용)
-discounted = list(map(lambda x: x * 0.9, prices))
-print(f"After 10% discount: {discounted}")
-
-# Find items over $200 (200 이상 품목 찾기)
-expensive = list(filter(lambda x: x >= 200, prices))
-print(f"Items over $200: {expensive}")
-
-# Sort by price (가격순 정렬)
-sorted_prices = sorted(prices)
-print(f"Sorted prices: {sorted_prices}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -251,32 +180,6 @@ print(factorial(5))  # 120
 print(factorial(10))  # 3628800
 ```
 
-### Example 3: Fibonacci Sequence (예제 3: 피보나치 수열)
-
-A classic recursive function that generates Fibonacci numbers.
-
-재귀를 사용한 피보나치 수열 생성입니다.
-
-```python
-# Fibonacci sequence using recursion (피보나치 수열)
-def fibonacci(n):
-    # Base cases (기저 사례)
-    if n <= 1:
-        return n
-  
-    # Recursive case (재귀 사례)
-    return fibonacci(n - 1) + fibonacci(n - 2)
-
-print("🔢" + "=" * 38 + "🔢")
-print("   Fibonacci Sequence")
-print("🔢" + "=" * 38 + "🔢")
-print("\nFirst 10 Fibonacci numbers:")
-
-for i in range(10):
-    print(f"F({i}) = {fibonacci(i)}")
-
-print("=" * 40)
-```
 
 ---
 
@@ -315,35 +218,7 @@ print_info(name="Alice", age=25, city="New York")
 # city: New York
 ```
 
-### Example 4: Flexible Calculator (예제 5: 유연한 계산기)
 
-A calculator that works with any number of arguments.
-
-어떤 개수의 인자로도 작동하는 계산기입니다.
-
-```python
-# Flexible calculator (유연한 계산기)
-def calculate(operation, *args):
-    if operation == "add":
-        return sum(args)
-    elif operation == "multiply":
-        result = 1
-        for num in args:
-            result = result * num
-        return result
-    elif operation == "average":
-        return sum(args) / len(args)
-
-print("🔢" + "=" * 38 + "🔢")
-print("   Flexible Calculator")
-print("🔢" + "=" * 38 + "🔢")
-
-print(f"\nAdd: {calculate('add', 1, 2, 3, 4, 5)}")  # 15
-print(f"Multiply: {calculate('multiply', 2, 3, 4)}")  # 24
-print(f"Average: {calculate('average', 10, 20, 30, 40)}")  # 25.0
-
-print("=" * 40)
-```
 
 ---
 
