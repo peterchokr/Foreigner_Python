@@ -182,30 +182,7 @@ list2 = list1.copy()  # Independent copy (독립적인 복사본)
 
 ---
 
-## 5️⃣ List Comprehension (리스트 컴프리헨션)
-
-List comprehension provides a concise way to create lists.
-
-리스트 컴프리헨션은 간결한 리스트 생성 방법입니다.
-
-```python
-# Basic list comprehension (기본 리스트 컴프리헨션)
-numbers = [x for x in range(1, 6)]
-print(numbers)  # [1, 2, 3, 4, 5]
-
-# With operation (연산과 함께)
-squared = [x ** 2 for x in range(1, 6)]
-print(squared)  # [1, 4, 9, 16, 25]
-
-# With condition (조건과 함께)
-evens = [x for x in range(1, 11) if x % 2 == 0]
-print(evens)  # [2, 4, 6, 8, 10]
-```
-
-
----
-
-## 6️⃣ Nested Lists (중첩 리스트)
+## 5️⃣ Nested Lists (중첩 리스트)
 
 Lists can contain other lists, creating a 2D structure.
 
@@ -348,21 +325,6 @@ print(numbers)
 3. [9, 8, 5, 2, 1]
 4. Error
 
-### [Advanced] Question 5
-
-What is the output?
-
-다음 코드의 출력 결과는?
-
-```python
-numbers = [x ** 2 for x in range(1, 4)]
-print(numbers)
-```
-
-1. [1, 2, 3]
-2. [1, 4, 9]
-3. [0, 1, 4, 9]
-4. Error
 
 ---
 
@@ -388,10 +350,6 @@ sort() sorts the list in ascending order. [5, 2, 8, 1, 9] becomes [1, 2, 5, 8, 9
 
 sort()는 리스트를 오름차순으로 정렬합니다. [1, 2, 5, 8, 9]
 
-**Question 5 Answer: 2**
-List comprehension with x**2 for x in range(1, 4): 1², 2², 3² = [1, 4, 9]
-
-리스트 컴프리헨션으로 1², 2², 3² = [1, 4, 9]
 
 ---
 
