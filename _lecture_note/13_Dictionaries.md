@@ -147,6 +147,12 @@ print(student["age"])  # 20
 
 ```python
 # get(key) - Returns None if key doesn't exist
+student = {
+    "name": "Chulsu Kim",
+    "age": 20,
+    "major": "Computer Science"
+}
+
 print(student.get("major"))  # Computer Science
 print(student.get("id"))  # None (No error!)
 
