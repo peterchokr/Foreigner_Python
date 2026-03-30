@@ -128,7 +128,7 @@ else:
 
 ## 3️⃣ Accessing Dictionary Values (딕셔너리 값 접근하기)
 
-### Bracket Access (대괄호 접근)
+### 1. Bracket Access (대괄호 접근)
 
 ```python
 student = {
@@ -143,7 +143,7 @@ print(student["age"])  # 20
 # print(student["id"])  # Error! If key doesn't exist, raises error
 ```
 
-### get() Method (Safe Access) (get() 메서드 (안전한 접근))
+### 2. get() Method (Safe Access) (get() 메서드 (안전한 접근))
 
 ```python
 # get(key) - Returns None if key doesn't exist
