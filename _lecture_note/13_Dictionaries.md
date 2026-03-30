@@ -268,31 +268,7 @@ print("=" * 40)
 
 ---
 
-## 6️⃣ Nested Dictionaries (중첩 딕셔너리)
 
-Dictionaries can contain other dictionaries for complex data structures.
-
-딕셔너리는 다른 딕셔너리를 포함할 수 있어 복잡한 자료구조를 만듭니다.
-
-```python
-# Nested dictionary (중첩 딕셔너리)
-company = {
-    "name": "Tech Corp",
-    "employees": {
-        "Alice": {"position": "Engineer", "salary": 100000},
-        "Bob": {"position": "Manager", "salary": 120000},
-        "Charlie": {"position": "Designer", "salary": 90000}
-    }
-}
-
-# Access nested values (중첩된 값 접근)
-print(company["name"])  # Tech Corp
-print(company["employees"]["Alice"]["position"])  # Engineer
-```
-
-
-
----
 
 ## 📝 Summary of Key Concepts (핵심 개념 정리)
 
