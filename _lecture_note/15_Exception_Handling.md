@@ -122,7 +122,7 @@ The program keeps running without stopping!
 
 Exception handling is used in **"places where problems can occur"**:
 
-예외 처리는 **"문제가 생길 수 있는 곳"**에 사용합니다:
+예외 처리는 **"문제가 생길 수 있는 곳"** 에 사용합니다:
 
 1. **User Input**: Users can enter unexpected values**사용자 입력**: 사용자는 예상 못한 값을 입력할 수 있음
 2. **File Operations**: Files might be missing, have permission issues, or be corrupted
