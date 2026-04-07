@@ -321,12 +321,6 @@ The `finally` block always executes **regardless of whether an exception occurre
 
 `finally` 블록은 예외 발생 여부와 **관계없이 항상 실행**됩니다. 마치 "어떤 일이 있어도 반드시 해야 하는 일"을 지정하는 것입니다.
 
-### Why finally is Needed (finally가 필요한 이유)
-
-If you open a file, you must close it. If you connect to a database, you must disconnect. If you borrow resources, you must return them. These "cleanup tasks" must happen whether an exception occurs or not.
-
-파일을 열었으면 닫아야 하고, 데이터베이스에 연결했으면 연결을 끊어야 하고, 자원을 빌렸으면 반납해야 합니다. 예외가 발생하든 안 하든 이런 "정리 작업"은 반드시 해야 합니다.
-
 ### Basic Example (기본 예제)
 
 ```python
