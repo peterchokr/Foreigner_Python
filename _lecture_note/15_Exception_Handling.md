@@ -124,15 +124,15 @@ Exception handling is used in **"places where problems can occur"**:
 
 예외 처리는 **"문제가 생길 수 있는 곳"** 에 사용합니다:
 
-1. **User Input**: Users can enter unexpected values   **사용자 입력**: 사용자는 예상 못한 값을 입력할 수 있음
+1. **User Input**: Users can enter unexpected values   (**사용자 입력**: 사용자는 예상 못한 값을 입력할 수 있음)
 2. **File Operations**: Files might be missing, have permission issues, or be corrupted
-   **파일 작업**: 파일이 없거나, 권한이 없거나, 손상될 수 있음
+   (**파일 작업**: 파일이 없거나, 권한이 없거나, 손상될 수 있음)
 3. **Network Communication**: Internet connection might drop, server might not respond
-   **네트워크 통신**: 인터넷 연결이 끊기거나, 서버가 응답 안 할 수 있음
+   (**네트워크 통신**: 인터넷 연결이 끊기거나, 서버가 응답 안 할 수 있음)
 4. **External Data**: Data formats like JSON, CSV might be wrong
-   **외부 데이터**: JSON, CSV 등 데이터 형식이 잘못될 수 있음
+   (**외부 데이터**: JSON, CSV 등 데이터 형식이 잘못될 수 있음)
 5. **Calculations**: Division by zero, square root of negative numbers, etc.
-   **계산**: 0으로 나누기, 음수의 제곱근 등
+   (**계산**: 0으로 나누기, 음수의 제곱근 등)
 
 ⚠️ **Warning**: Don't wrap all code in try-except! It can hide real bugs. Use it selectively for places where problems can occur.
 
