@@ -233,26 +233,6 @@ Python has many different exception types. Let's learn the ones you'll encounter
 └─ NameError         : Variable not defined (변수 이름이 정의 안 됨)
 ```
 
-### Handling Specific Exceptions (특정 예외만 처리하기)
-
-By specifying the exception type, you catch only that specific exception:
-
-예외 유형을 지정하면 그 예외만 잡을 수 있습니다:
-
-```python
-# Handle only ValueError (ValueError만 처리)
-try:
-    age = int(input("Age: "))
-    print(f"You are {age} years old.")
-  
-except ValueError:
-    print("❌ Please enter a number!")
-    print("💡 Example: 25")
-```
-
-Now only `ValueError` is caught, and other errors stop the program. This is safer because you don't hide unexpected errors.
-
-이제 `ValueError`만 잡고, 다른 오류는 프로그램을 중단시킵니다. 이것이 더 안전합니다. 예상하지 못한 오류를 숨기지 않기 때문입니다.
 
 ### Handling Multiple Exceptions Differently (여러 예외를 다르게 처리하기)
 
