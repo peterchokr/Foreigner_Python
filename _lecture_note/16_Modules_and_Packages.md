@@ -362,7 +362,7 @@ If you later want to improve the `add` function, just modify `mymath.py`. All pr
 
 As a program grows, so does the number of modules. Having 10, 20, or 100 modules scattered in one folder becomes difficult to manage. That's when **Packages** become essential.
 
-프로그램이 점점 커지면 모듈도 많아집니다. 10개, 20개, 100개의 모듈이 한 폴더에 뒤죽박죽 섞여있으면 관리하기 어렵겠죠? 이럴 때 **패키지(Package)**를 사용합니다.
+프로그램이 점점 커지면 모듈도 많아집니다. 10개, 20개, 100개의 모듈이 한 폴더에 뒤죽박죽 섞여있으면 관리하기 어렵겠죠? 이럴 때 **패키지(Package)** 를 사용합니다.
 
 A package is a **folder that contains modules**. Think of it like organizing files into folders — placing related files together in one folder.
 
