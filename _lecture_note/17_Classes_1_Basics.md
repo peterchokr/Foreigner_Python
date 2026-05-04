@@ -42,9 +42,9 @@ A class is like a fish-cake mold. Just as you can make multiple fish cakes with 
 
 ### Real-World Analogy (실생활 비유)
 
-- **Car design** = Class   - **My car, your car** = Objects
-- **Smartphone model** = Class    - **My iPhone, your iPhone** = Objects
-- **Person** = Class    - **Hong Gildong, Kim Chulsu** = Objects
+- **Car design** = Class       **My car, your car** = Objects
+- **Smartphone model** = Class         **My iPhone, your iPhone** = Objects
+- **Person** = Class        **Hong Gildong, Kim Chulsu** = Objects
 
 ### Components of a Class (클래스의 구성 요소)
 
