@@ -32,7 +32,7 @@ def heal():
 
 What happens as characters multiply to 2, 3, or more? The number of variables grows tremendously and becomes difficult to manage. This is when we need **classes (Class)**!
 
-캐릭터가 2명, 3명으로 늘어나면 어떻게 될까요? 변수가 엄청나게 많아지고 관리하기 힘들어집니다. 이럴 때 **클래스(Class)**가 필요합니다!
+캐릭터가 2명, 3명으로 늘어나면 어떻게 될까요? 변수가 엄청나게 많아지고 관리하기 힘들어집니다. 이럴 때 **클래스(Class)** 가 필요합니다!
 
 ### A Class is a Blueprint (클래스는 설계도다)
 
