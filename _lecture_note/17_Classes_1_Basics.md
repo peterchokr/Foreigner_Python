@@ -402,7 +402,7 @@ Each dog has its own name. Dog1's name is different from Dog2's.
 
 ```python
 class Dog:
-    species = "Canis familiaris"  # Class variable (클래스 변수 - 모든 개가 공유)
+    species = "Poodle"  # Class variable (클래스 변수 - 모든 개가 공유)
   
     def __init__(self, name):
         self.name = name  # Instance variable (인스턴스 변수 - 개마다 다름)
@@ -410,8 +410,8 @@ class Dog:
 dog1 = Dog("Buddy")
 dog2 = Dog("Max")
 
-print(dog1.species)  # Canis familiaris
-print(dog2.species)  # Canis familiaris (same value - 같은 값)
+print(dog1.species)  # Poodle
+print(dog2.species)  # Poodle (same value - 같은 값)
 
 print(dog1.name)  # Buddy
 print(dog2.name)  # Max (different values - 다른 값)
