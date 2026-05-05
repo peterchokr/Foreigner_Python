@@ -18,7 +18,8 @@ So far, we've created programs with only text in the terminal (black screen). Bu
 
 ### CLI vs GUI
 
-**CLI (Command Line Interface)** - Terminal, command input (터미널, 명령어 입력)
+**CLI (Command Line Interface)** - Terminal, command input (터미널, 명령어 입력)   
+
 **GUI (Graphical User Interface)** - Window, mouse click (윈도우, 마우스 클릭)
 
 ```
