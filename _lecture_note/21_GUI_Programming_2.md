@@ -10,13 +10,13 @@ After completing this chapter, you will be able to utilize tkinter's advanced wi
 
 ---
 
-## 1️⃣ Checkbutton - Checkbox (Checkbutton - 체크박스)
+## 1️⃣ Checkbutton - Checkbox 
 
 A checkbox that allows you to select multiple items at the same time.
 
 여러 개를 동시에 선택할 수 있는 체크박스입니다.
 
-### Why Use Checkbox? (왜 체크박스를 사용할까?)
+### Why Use Checkbox? 
 
 Use it when you need to select multiple items at once, like in surveys or option selection.
 
@@ -24,13 +24,12 @@ Use it when you need to select multiple items at once, like in surveys or option
 
 ```
 Example: Select your favorite fruits (multiple selection possible)
-예시: 좋아하는 과일 선택 (여러 개 가능)
 ☑ Apple (사과)
 ☐ Banana (바나나)
 ☑ Strawberry (딸기)
 ```
 
-### Basic Checkbox (기본 체크박스)
+### Basic Checkbox 
 
 ```python
 import tkinter as tk
@@ -87,13 +86,13 @@ window.mainloop()
 
 ---
 
-## 2️⃣ Radiobutton - Radio Button (Radiobutton - 라디오 버튼)
+## 2️⃣ Radiobutton - Radio Button 
 
 A button that allows you to select only one from multiple options.
 
 여러 개 중 **하나만** 선택할 수 있는 버튼입니다.
 
-### Why Use Radio Button? (왜 라디오 버튼을 사용할까?)
+### Why Use Radio Button? 
 
 Use it when you need to select only one option, like gender or grade.
 
@@ -101,12 +100,11 @@ Use it when you need to select only one option, like gender or grade.
 
 ```
 Example: Select gender (only one possible)
-예시: 성별 선택 (하나만 가능)
 ◉ Male (남자)
 ◯ Female (여자)
 ```
 
-### Basic Radio Button (기본 라디오 버튼)
+### Basic Radio Button 
 
 ```python
 import tkinter as tk
@@ -164,13 +162,13 @@ var1, var2, var3                    var
 
 ---
 
-## 3️⃣ Text - Multi-line Input (Text - 여러 줄 입력)
+## 3️⃣ Text - Multi-line Input
 
 Entry can only input one line, but Text can input **multiple lines**.
 
 Entry는 한 줄만 입력할 수 있지만, Text는 **여러 줄** 입력이 가능합니다.
 
-### Basic Text Widget (기본 Text 위젯)
+### Basic Text Widget
 
 ```python
 import tkinter as tk
@@ -217,7 +215,7 @@ window.mainloop()
 
 💡 **"1.0"의 의미**: 1번째 줄, 0번째 문자 (첫 위치)
 
-### Practical Example: Simple Text Editor (실전 예제: 간단한 텍스트 편집기)
+### Practical Example: Simple Text Editor
 
 ```python
 import tkinter as tk
@@ -258,13 +256,13 @@ window.mainloop()
 
 ---
 
-## 4️⃣ Scrollbar - Scrollbar (Scrollbar - 스크롤바)
+## 4️⃣ Scrollbar - Scrollbar 
 
 Allows scrolling when there is a lot of content.
 
 내용이 많을 때 스크롤할 수 있게 만듭니다.
 
-### Connecting Text and Scrollbar (Text와 Scrollbar 연결)
+### Connecting Text and Scrollbar 
 
 ```python
 import tkinter as tk
@@ -309,7 +307,7 @@ window.mainloop()
 
 ---
 
-## 5️⃣ messagebox - Message Box (messagebox - 메시지 박스)
+## 5️⃣ messagebox - Message Box
 
 Display notifications, confirmations, and error messages to the user.
 
@@ -364,22 +362,22 @@ window.mainloop()
 
 **Key messagebox Functions (주요 messagebox):**
 
-- `showinfo()`: Information message (ℹ️) (정보)
-- `showwarning()`: Warning message (⚠️) (경고)
-- `showerror()`: Error message (❌) (오류)
-- `askyesno()`: Yes/No question (returns True/False) (예/아니오 질문)
-- `askokcancel()`: OK/Cancel (returns True/False) (확인/취소)
-- `askretrycancel()`: Retry/Cancel (다시/취소)
+- `showinfo()`: Information message (ℹ️) 
+- `showwarning()`: Warning message (⚠️) 
+- `showerror()`: Error message (❌)
+- `askyesno()`: Yes/No question (returns True/False) 
+- `askokcancel()`: OK/Cancel (returns True/False)
+- `askretrycancel()`: Retry/Cancel 
 
 ---
 
-## 6️⃣ Scale - Slider (Scale - 슬라이더)
+## 6️⃣ Scale - Slider
 
 A slider that allows you to select a value by dragging with the mouse.
 
 마우스로 드래그하여 값을 선택하는 슬라이더입니다.
 
-### Basic Scale (기본 Scale)
+### Basic Scale 
 
 ```python
 import tkinter as tk
@@ -425,7 +423,7 @@ window.mainloop()
 
 ---
 
-## 7️⃣ Practical Example: Simple Calculator (Final) (실전 예제: 간단한 계산기 - 완성판)
+## 7️⃣ Practical Example: Simple Calculator (Final) 
 
 A calculator using various widgets.
 
@@ -526,13 +524,13 @@ window.mainloop()
 
 ---
 
-## 8️⃣ Menu - Menu Bar (Menu - 메뉴 바)
+## 8️⃣ Menu - Menu Bar
 
 You can add a menu at the top of the program.
 
 프로그램 상단에 메뉴를 추가할 수 있습니다.
 
-### Basic Menu (기본 메뉴)
+### Basic Menu
 
 ```python
 import tkinter as tk
