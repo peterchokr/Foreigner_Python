@@ -101,9 +101,7 @@ window.mainloop()             # Run window (always last!) (항상 마지막!)
 - `window.geometry()`: Sets window size (윈도우 크기 설정)
 - `window.mainloop()`: Runs the window event loop (윈도우 실행)
 
-💡 **Important (중요)**: `mainloop()` must always be **at the end** of the code!
-
-💡 **중요**: `mainloop()`는 항상 코드의 **마지막**에 있어야 합니다!
+💡 **Important**: `mainloop()` must always be **at the end** of the code!
 
 ---
 
