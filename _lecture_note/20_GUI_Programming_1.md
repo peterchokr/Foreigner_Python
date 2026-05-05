@@ -273,7 +273,7 @@ window.mainloop()
 - `width`, `height`: Size (크기)
 - `padx`, `pady`: Padding (여백)
 
-### Important Concept: command Parameter (중요: command 파라미터)
+### Important Concept: command Parameter 
 
 ```python
 # ✅ Correct (정확한 방법)
@@ -292,13 +292,13 @@ Note: Don't use `()` after the function name! It will execute immediately.
 
 ---
 
-## 5️⃣ Entry - Accepting Input (Entry - 입력 받기)
+## 5️⃣ Entry - Accepting Input
 
 The Entry widget is used to receive input from users.
 
 Entry는 사용자로부터 입력을 받을 때 사용하는 위젯입니다.
 
-### Basic Entry (기본 Entry)
+### Basic Entry 
 
 ```python
 import tkinter as tk
@@ -317,7 +317,7 @@ entry.pack(pady=10)
 window.mainloop()
 ```
 
-### Getting Input Values (입력값 가져오기)
+### Getting Input Values 
 
 ```python
 import tkinter as tk
@@ -343,7 +343,7 @@ label.pack(pady=10)
 window.mainloop()
 ```
 
-**Entry Methods (Entry 메서드):**
+**Entry Methods :**
 
 - `get()`: Get the text from Entry (Entry의 텍스트 가져오기)
 - `delete(start, end)`: Delete text (텍스트 삭제)
@@ -352,13 +352,13 @@ window.mainloop()
 
 ---
 
-## 6️⃣ pack() - Layout Arrangement (pack() - 레이아웃 배치)
+## 6️⃣ pack() - Layout Arrangement 
 
 A method to place widgets on the screen.
 
 위젯을 화면에 배치하는 방법입니다.
 
-### Basic pack() (pack() 기본)
+### Basic pack() 
 
 ```python
 import tkinter as tk
@@ -375,7 +375,7 @@ tk.Label(window, text="Third", bg="blue").pack()
 window.mainloop()
 ```
 
-### pack() Options (pack() 옵션)
+### pack() Options
 
 ```python
 import tkinter as tk
@@ -397,7 +397,7 @@ tk.Label(window, text="Fill horizontally", bg="lightblue").pack(fill="x")
 window.mainloop()
 ```
 
-**Key pack() Options (pack() 주요 옵션):**
+**Key pack() Options :**
 
 - `side`: "top"(top), "bottom"(bottom), "left"(left), "right"(right)
   (위, 아래, 왼쪽, 오른쪽)
@@ -408,7 +408,7 @@ window.mainloop()
 - `expand`: True/False (expand to fill space)
   (남은 공간 채우기)
 
-### Practical Example: Widget Arrangement (실전 예제: 위젯 배치)
+### Practical Example: Widget Arrangement 
 
 ```python
 import tkinter as tk
@@ -453,7 +453,7 @@ window.mainloop()
 
 ---
 
-## 7️⃣ Practical Example: Simple Calculator (실전 예제: 간단한 계산기)
+## 7️⃣ Practical Example: Simple Calculator
 
 Let's create a calculator using what we've learned so far!
 
@@ -541,13 +541,13 @@ window.mainloop()
 
 ---
 
-## 8️⃣ grid() - Table-like Arrangement (grid() - 표 형태 배치)
+## 8️⃣ grid() - Table-like Arrangement 
 
 Using `grid()`, you can arrange widgets like a table.
 
 `grid()`를 사용하면 위젯을 표처럼 배치할 수 있습니다.
 
-### Basic grid (기본 grid)
+### Basic grid 
 
 ```python
 import tkinter as tk
@@ -571,7 +571,7 @@ tk.Button(window, text="OK").grid(row=3, column=0, columnspan=2, pady=10)
 window.mainloop()
 ```
 
-**Key grid() Options (grid() 주요 옵션):**
+**Key grid() Options :**
 
 - `row`: Row number (starts from 0) (행 번호 - 0부터 시작)
 - `column`: Column number (starts from 0) (열 번호 - 0부터 시작)
@@ -581,7 +581,7 @@ window.mainloop()
 
 ---
 
-## 9️⃣ Practical Example: Login Screen (실전 예제: 로그인 화면)
+## 9️⃣ Practical Example: Login Screen
 
 A clean login screen using grid().
 
