@@ -26,13 +26,13 @@ CLI Example (CLI 예제)           GUI Example (GUI 예제)
 
 $ python calc.py                 Calculator Window
 Enter number 1: 10               ┌─────────────────┐
-Enter number 2: 20               │ 계산기    [_][□][X]│
+Enter number 2: 20               │ 계산기 [_][□][X]│
 Result: 30                       │                 │
                                  │ Result: 30      │
                                  │                 │
-                                 │ [7][8][9][+]   │
-                                 │ [4][5][6][-]   │
-                                 │ [1][2][3][×]   │
+                                 │ [7][8][9][+]    │
+                                 │ [4][5][6][-]    │
+                                 │ [1][2][3][×]    │
                                  └─────────────────┘
 ```
 
