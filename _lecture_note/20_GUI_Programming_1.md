@@ -10,7 +10,7 @@ After completing this chapter, you will be able to create window programs using 
 
 ---
 
-## 1️⃣ What is GUI? (GUI란 무엇인가?)
+## 1️⃣ What is GUI? 
 
 So far, we've created programs with only text in the terminal (black screen). But what about the programs we use daily? They are window programs with buttons, menus, and text boxes!
 
@@ -43,7 +43,7 @@ Result: 30                       │                 │
 - ✅ Visually appealing (시각적으로 보기 좋음)
 - ✅ Accessible to general users (일반 사용자도 쉽게 사용 가능)
 
-### What is tkinter? (tkinter란?)
+### What is tkinter? 
 
 **tkinter** is a GUI library included by default in Python. You can use it right away without any additional installation!
 
@@ -55,13 +55,13 @@ import tkinter  # Already installed! (이미 설치되어 있음!)
 
 ---
 
-## 2️⃣ Creating Your First Window (첫 번째 윈도우 만들기)
+## 2️⃣ Creating Your First Window 
 
 Let's create the simplest window.
 
 가장 간단한 윈도우부터 만들어봅시다.
 
-### Basic Window (기본 윈도우)
+### Basic Window 
 
 ```python
 import tkinter as tk
@@ -76,12 +76,12 @@ window.geometry("400x300")        # Set size: width x height (크기 설정 - �
 window.mainloop()
 ```
 
-**When you run it:  (실행하면)**
+**When you run it:**
 
 - A window of 400 pixels wide and 300 pixels tall appears (가로 400픽셀, 세로 300픽셀 크기의 윈도우가 나타남)
 - "My First Program" is displayed in the title bar (제목 표시줄에 "My First Program"이 표시됨)
 
-### Code Explanation (코드 설명)
+### Code Explanation
 
 ```python
 import tkinter as tk          # Import tkinter with short name tk
@@ -94,7 +94,7 @@ window.geometry("width x height")  # Set window size (윈도우 크기)
 window.mainloop()             # Run window (always last!) (항상 마지막!)
 ```
 
-**Key Methods (주요 메서드):**
+**Key Methods :**
 
 - `tk.Tk()`: Creates a new window (새로운 윈도우 생성)
 - `window.title()`: Sets the title bar text (제목 표시줄 설정)
@@ -105,13 +105,13 @@ window.mainloop()             # Run window (always last!) (항상 마지막!)
 
 ---
 
-## 3️⃣ Label - Displaying Text (Label - 텍스트 표시하기)
+## 3️⃣ Label - Displaying Text 
 
 To display text in a window, use Label.
 
 윈도우에 글자를 표시하려면 Label을 사용합니다.
 
-### Basic Label (기본 Label)
+### Basic Label
 
 ```python
 import tkinter as tk
@@ -127,7 +127,7 @@ label.pack()  # Place on screen (화면에 배치)
 window.mainloop()
 ```
 
-### Decorating Label (Label 꾸미기)
+### Decorating Label 
 
 ```python
 import tkinter as tk
@@ -156,7 +156,7 @@ label2.pack()
 window.mainloop()
 ```
 
-**Key Options (주요 옵션):**
+**Key Options :**
 
 - `text`: Text to display (표시할 글자)
 - `font`: Font (font name, size, style) (글꼴 - 이름, 크기, 스타일)
@@ -165,7 +165,7 @@ window.mainloop()
 - `width`, `height`: Size (크기)
 - `padx`, `pady`: Padding (여백)
 
-### Practical Example: Welcome Window (실전 예제: 환영 화면)
+### Practical Example: Welcome Window 
 
 ```python
 import tkinter as tk
@@ -199,13 +199,13 @@ window.mainloop()
 
 ---
 
-## 4️⃣ Button - Creating Buttons (Button - 버튼 만들기)
+## 4️⃣ Button - Creating Buttons
 
 When you click a button, you can make a function run!
 
 버튼을 클릭하면 함수가 실행되게 만들 수 있습니다!
 
-### Basic Button (기본 Button)
+### Basic Button
 
 ```python
 import tkinter as tk
@@ -233,7 +233,7 @@ When you click the button, "Button was clicked!" is printed in the terminal.
 
 버튼을 클릭하면 터미널에 "Button was clicked!"가 출력됩니다.
 
-### Using with Label (Label과 함께 사용)
+### Using with Label 
 
 ```python
 import tkinter as tk
