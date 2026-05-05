@@ -76,14 +76,10 @@ window.geometry("400x300")        # Set size: width x height (크기 설정 - �
 window.mainloop()
 ```
 
-**When you run it:**
+**When you run it:  (실행하면)**
 
-When you run it (실행하면):
-
-- A window of 400 pixels wide and 300 pixels tall appears
-  가로 400픽셀, 세로 300픽셀 크기의 윈도우가 나타남
-- "My First Program" is displayed in the title bar
-  제목 표시줄에 "My First Program"이 표시됨
+- A window of 400 pixels wide and 300 pixels tall appears (가로 400픽셀, 세로 300픽셀 크기의 윈도우가 나타남)
+- "My First Program" is displayed in the title bar (제목 표시줄에 "My First Program"이 표시됨)
 
 ### Code Explanation (코드 설명)
 
