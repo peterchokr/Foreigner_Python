@@ -455,16 +455,6 @@ messagebox.askokcancel("Title", "Question")
 messagebox.showerror("Title", "Error message")
 ```
 
-### Menu (메뉴)
-
-```python
-menubar = tk.Menu(window)
-window.config(menu=menubar)
-
-file_menu = tk.Menu(menubar, tearoff=0)
-menubar.add_cascade(label="File", menu=file_menu)
-file_menu.add_command(label="Open")
-```
 
 ### Event Handling Summary (이벤트 처리 정리)
 
@@ -574,18 +564,6 @@ What messagebox asks Yes/No?
 4. messagebox.question()
 ```
 
-### [Advanced] Question 5
-
-How do you add a menu bar to a window?
-
-메뉴 바를 윈도우에 추가하는 코드는?
-
-```
-1. window.menubar = menubar
-2. window.set_menu(menubar)
-3. window.config(menu=menubar)
-4. window.add_menu(menubar)
-```
 
 ---
 
@@ -615,11 +593,6 @@ Use `messagebox.askyesno()` to ask Yes/No.
 
 `messagebox.askyesno()`로 예/아니오를 묻습니다.
 
-**Answer 5: 3**
-
-Use `window.config(menu=menubar)` to add menu bar.
-
-`window.config(menu=menubar)`로 메뉴 바를 추가합니다.
 
 ---
 
